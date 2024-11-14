@@ -1,0 +1,96 @@
+/* Reset beberapa elemen dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-image: url(img/bg.jpg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Tambahkan agar elemen disusun secara vertikal */
+    height: 100vh;
+    padding: 0 20px; /* Jaga padding untuk layar kecil */
+    background-size: cover; /* Gambar mengisi seluruh area */
+    background-position: center; /* Memusatkan gambar */
+    background-repeat: no-repeat; /* Menghindari pengulangan gambar */
+}
+
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px; /* Beri jarak lebih antara judul dan form */
+    text-align: center;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.336); /* Warna putih dengan transparansi 80% */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.596);
+    max-width: 400px;
+    width: 100%;
+    margin: 0 auto; /* Memusatkan form */
+}
+
+label {
+    font-size: 1.2em;
+    color: #555;
+}
+
+input[type="text"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: all 0.3s;
+}
+
+input[type="text"]:focus {
+    border-color: #3498db;
+    box-shadow: 0 0 8px rgba(52, 152, 219, 0.2);
+    outline: none;
+}
+
+input[type="submit"] {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 5px;
+    font-size: 1em;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9;
+}
+
+input[type="submit"]:active {
+    background-color: #1f6394;
+}
+
+/* Style untuk mobile */
+@media (max-width: 600px) {
+    form {
+        padding: 20px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    label {
+        font-size: 1em;
+    }
+}
+
+
